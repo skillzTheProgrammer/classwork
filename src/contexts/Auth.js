@@ -1,7 +1,7 @@
 import {createContext, useState} from 'react'
 
 const data = {
-    isAuthenticated: true,
+    isAuthenticated: false,
     isAnonymous: false
 }
 

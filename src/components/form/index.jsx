@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FormContainer, InputDiv, LabelIcon, LoginForm } from './style'
 import username from '../../assets/icons/username.svg'
 import password from '../../assets/icons/password.svg'
@@ -9,8 +9,13 @@ export default function Form({history}) {
 
     const [form, setForm] = useState({})
     const user = useContext(UserContext)
-    const [auth,setAuth] = useContext(AuthContext)
-    console.log(history)
+    const [auth,setAuth] = useState()
+
+    useEffect(() => {
+        const data = sessionStorage.getItem('Auth')
+        setAuth(data)
+    }, [])
+
     function onChangeHandler(e){
         setForm({
             ...form,
@@ -50,7 +55,7 @@ export default function Form({history}) {
                 
                 <button onClick={onClickHandler} >Sign in</button>
             </LoginForm>
-
+            <h2>Not yet a Member? <span>Sign up</span></h2>
         </FormContainer>
     )
 }

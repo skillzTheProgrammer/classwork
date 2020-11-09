@@ -5,8 +5,18 @@ export const FormContainer = styled.div`
     height: 100vh;
     background-color: #ECEBEb;
     display:flex;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
+
+    h2{
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    span{
+        color: #273B89
+    }
 `
 
 export const LoginForm = styled.form`

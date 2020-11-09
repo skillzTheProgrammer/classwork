@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Dashboard from './components/dashboard';
 import Form from './components/form';
+import Join from './components/Register/index'
 import NoMatch from './components/noMatch';
+import { DASHBOARD, LOGIN, REGISTER } from './routes/routes';
 import ProtectedRoute from './utils/ProtectedRoute';
 
+
+
 function App() {
+
+  useEffect(()=>{
+    sessionStorage.setItem('Auth',JSON.stringify({auth:true}))
+  })
+  
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/login' component={Form} />
-        <ProtectedRoute path='/dashboard/:username' component={Dashboard} />
+        <Route path={LOGIN} component={Form} />
+        <Route path={DASHBOARD} component={Dashboard} />
+        <Route path={REGISTER} component={Join} />
         <Route component={NoMatch} />
       </Switch>
     </BrowserRouter>

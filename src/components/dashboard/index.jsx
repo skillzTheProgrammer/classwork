@@ -1,10 +1,11 @@
 import React from 'react'
+import Sidemenu from './sidemenu/Sidemenu'
+import { DashboardContainer } from './style'
 
-export default function Dashboard({match}) {
+export default function Dashboard() {
     return (
-        <div>
-            <h1>Welcome, {match.params.username}</h1>
-            {console.log(match)}
-        </div>
+        <DashboardContainer>
+            <Sidemenu />
+        </DashboardContainer>
     )
 }
