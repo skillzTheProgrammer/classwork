@@ -12,7 +12,7 @@ import ProtectedRoute from './utils/ProtectedRoute';
 function App() {
 
   useEffect(()=>{
-    sessionStorage.setItem('Auth',JSON.stringify({auth:true}))
+    sessionStorage.setItem('Auth', JSON.stringify({auth:true}))
   })
   
   return (

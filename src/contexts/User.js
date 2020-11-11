@@ -1,10 +1,10 @@
 import {createContext} from 'react'
 
 const data = {
-    firstName: "John",
-    lastName: "Alicho",
-    username: "jimAlicho1219",
-    password: "bootyCall",
+    firstName: "Alicho",
+    lastName: "Emeka",
+    username: "Alicho1219",
+    password: "bootycall",
     numOfClasses: 34,
     numOfProjects: 12,
     numOfCourses: 49
