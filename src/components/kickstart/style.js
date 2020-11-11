@@ -34,26 +34,19 @@ export const KickstartContainer = styled.div`
     }
 
     button{
-        background-color: orange;
+        background-color: #FEA110;
         border: 0;
         border-radius:20px;
         margin: 10px 0 0 50px;
-        height: 27px
-    }
-
-    #buttonlabel{
-        font-size:7px;
-        padding: 20px;
+        /* height: 27px */
+        padding: 10px;
         color: white;
-        justify-content:center;
+        font-size: .7rem;
     }
-
-
-
-
     
     
 `
+
 export const kickstartContent = styled.div`
   
 
