@@ -5,4 +5,6 @@ export const DashboardContainer = styled.div`
     width: 100vw;
     height: 100vh;
     overflow:hidden;
+    display:flex;
+    justify-content:space-between
 `
