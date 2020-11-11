@@ -31,7 +31,6 @@ border-radius: 10px;
 export const UserNameDiv = styled.div`
 margin-top: 15px;
 display: flex;
-display-direction: row;
 padding-bottom: 10px;
     img{
         height: 40px;
@@ -71,6 +70,10 @@ padding-top: 15px;
         width: 50%;
         color: black;
         cursor: pointer;
+
+        :focus{
+            outline: none;
+        }
     }
     btn:hover{
         border: 1px solid #FEA110;
