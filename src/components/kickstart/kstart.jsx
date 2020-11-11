@@ -1,7 +1,6 @@
 import React from 'react'
 // import Sidemenu from './sidemenu/Sidemenu'
-import {KickstartContainer} from './style'
-import {kickstartContent} from './style'
+import {KickstartContainer, kickstartContent} from './style'
 
 export default function KickStart() {
     return (
@@ -11,7 +10,6 @@ export default function KickStart() {
                 <button><span id='buttonlabel'>Get started</span></button>
             </kickstartContent>
         </KickstartContainer>
-
 
     )
 }
