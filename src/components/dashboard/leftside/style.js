@@ -12,6 +12,20 @@ export const AssignmentDiv = styled.div`
     display: flex;
     flex-direction: column;
 
+    button{
+        background-color: white;
+        color: black;
+        width: 150px;
+        border: 2px solid yellow;
+        padding: 10px 7px 10px 7px;
+        border-radius: 50px;
+        margin:10px 0px 0 75px;
+
+        h6{
+            margin:0 5px 0 5px;
+        }
+    }
+
 `
 
 export const Header = styled.div`

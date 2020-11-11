@@ -1,5 +1,6 @@
 import React from 'react'
 import { AssignmentDiv, FirstBox, Header, ImageDiv, LeftContainer, SecondBox } from './style'
+import colorGenerator from './colorgenerator'
 
 export default function Leftside(){
     return(
@@ -9,10 +10,10 @@ export default function Leftside(){
                     <p>Assignments</p>
                     <h5>2</h5>
                 </Header>
-                <FirstBox>
+                <FirstBox style={{backgroundColor:colorGenerator()}}>
                    <div>
                        <h5>JavaScript - useEffect</h5>
-                       <h6>This Week</h6>
+                       <h6 style={{color:colorGenerator(), backgroundColor:colorGenerator()}}>This Week</h6>
                    </div>
                    <p>Nemo enim ipsam voluptatem quia voluptas
                         aspernatur aut odit aut fugit, sed quia.</p>
@@ -23,10 +24,10 @@ export default function Leftside(){
                     </ImageDiv>
                 </FirstBox>
 
-                <SecondBox>
+                <SecondBox style={{backgroundColor:colorGenerator()}}>
                     <div>
                        <h5>Django - Ecommerce</h5>
-                       <h6>Last Week</h6>
+                       <h6 style={{color:colorGenerator(), backgroundColor:colorGenerator()}}>Last Week</h6>
                    </div>
                    <p>Nemo enim ipsam voluptatem quia voluptas
                         aspernatur aut odit aut fugit, sed quia.</p>
@@ -36,7 +37,7 @@ export default function Leftside(){
                         <h3>Yinka</h3>
                     </ImageDiv>
                 </SecondBox>
-
+                <button type='button'><h6> Go To Assignment</h6></button>
             </AssignmentDiv>
         </LeftContainer>
     )
