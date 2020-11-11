@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import React, { useEffect } from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Dashboard from './components/dashboard';
 import Form from './components/form';
-import Join from './components/Register/index'
+import Join from './components/Register/index';
 import NoMatch from './components/noMatch';
 import { DASHBOARD, LOGIN, REGISTER } from './routes/routes';
 import ProtectedRoute from './utils/ProtectedRoute';
@@ -11,9 +11,9 @@ import ProtectedRoute from './utils/ProtectedRoute';
 
 function App() {
 
-  useEffect(()=>{
-    sessionStorage.setItem('Auth',JSON.stringify({auth:true}))
-  })
+  useEffect(() => {
+    sessionStorage.setItem("user", JSON.stringify({username: "michael", password: "classwork"}))
+  }, []);
   
   return (
     <BrowserRouter>

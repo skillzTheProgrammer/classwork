@@ -1,6 +1,6 @@
-import React,{useContext, useEffect, useState} from 'react'
-import { Redirect, Route } from 'react-router-dom'
-import { AuthContext } from '../contexts/Auth'
+import React,{useContext, useEffect, useState} from 'react';
+import { Redirect, Route } from 'react-router-dom';
+import { AuthContext } from '../contexts/Auth';
 
 function ProtectedRoute({path,component}){
 
@@ -22,4 +22,4 @@ function ProtectedRoute({path,component}){
     // )
 }
 
-export default ProtectedRoute
+export default ProtectedRoute;

@@ -1,9 +1,9 @@
 import {createContext, useState} from 'react'
 
 const data = {
-    isAuthenticated: false,
-    isAnonymous: false
-}
+    isAuthenticated: true,
+    isAnonymous: false,
+};
 
 export const AuthContext = createContext()
 

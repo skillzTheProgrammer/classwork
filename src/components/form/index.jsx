@@ -8,25 +8,26 @@ import { AuthContext } from '../../contexts/Auth'
 export default function Form({history}) {
 
     const [form, setForm] = useState({})
-    const user = useContext(UserContext)
-    const [auth,setAuth] = useState()
+    const [auth,setAuth] = useState({})
 
     useEffect(() => {
-        const data = sessionStorage.getItem('Auth')
+        const data = JSON.parse(sessionStorage.getItem('user'))
+        
         setAuth(data)
-    }, [])
+    }, []);
 
     function onChangeHandler(e){
+        const {name} = e.target
         setForm({
             ...form,
-            [e.target.name]: e.target.value
+            [name]: e.target.value
         })
     }
 
     function onClickHandler(e){
         e.preventDefault()
-    const isUsername = form.username === user.username
-    const isPassword = form.password === user.password 
+    const isUsername = form.username === auth.username
+    const isPassword = form.password === auth.password 
         if(isPassword && isUsername){
             setAuth({
                 ...auth,
