@@ -5,7 +5,9 @@ import Form from './components/form';
 import Join from './components/Register/index'
 import NoMatch from './components/noMatch';
 import { DASHBOARD, LOGIN, REGISTER } from './routes/routes';
+
 import ProtectedRoute from './utils/ProtectedRoute';
+
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route path={DASHBOARD} component={Dashboard} />
         <Route path={REGISTER} component={Join} />
         <Route component={NoMatch} />
+        
+        
       </Switch>
     </BrowserRouter>
   );
