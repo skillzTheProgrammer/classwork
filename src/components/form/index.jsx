@@ -10,6 +10,17 @@ export default function Form({ history }) {
   const [auth, setAuth] = useState({});
 
   useEffect(() => {
+    sessionStorage.setItem(
+      "user",
+      JSON.stringify({
+        username: "michael",
+        password: "classwork",
+        isLoggedIn: false,
+      })
+    );
+  }, []);
+
+  useEffect(() => {
     const data = JSON.parse(sessionStorage.getItem("user"));
 
     setAuth(data);

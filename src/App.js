@@ -8,16 +8,7 @@ import { DASHBOARD, LOGIN, REGISTER } from "./routes/routes";
 import ProtectedRoute from "./utils/ProtectedRoute";
 
 function App() {
-  useEffect(() => {
-    sessionStorage.setItem(
-      "user",
-      JSON.stringify({
-        username: "michael",
-        password: "classwork",
-        isLoggedIn: false,
-      })
-    );
-  }, []);
+  
 
   return (
     <BrowserRouter>
