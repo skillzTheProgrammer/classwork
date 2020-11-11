@@ -1,36 +1,34 @@
 import React from 'react'
-import { GeneralContainer, DividedSection, LowerSection, SecondDividedSection, UpperSection, InnerDiv, SectionText, OuterDiv, SecondOuterDiv, NoteButton, NoteText } from './style'
+import { GeneralContainer, LowerSection, SecondDividedSection, InnerDiv, SectionText, SecondOuterDiv, NoteButton, NoteText } from './style'
 import Notepad from '../note/notepad'
 
 
-function MiddleSection({props}) {
+function MiddleSection({ props }) {
 
-    return (
-        <GeneralContainer>
-            
-            <UpperSection>
-                
-            </UpperSection>
+    return ( <
+        GeneralContainer >
 
-            <LowerSection>
+        <
+        LowerSection >
 
-                <DividedSection>
+        <
+        SecondDividedSection >
 
-                </DividedSection>
+        <
+        SecondOuterDiv >
+        <
+        Notepad / >
+        <
+        /SecondOuterDiv>
 
-                <SecondDividedSection>
-                    <OuterDiv>
+        <
+        /SecondDividedSection>
 
-                    </OuterDiv>
-                    <SecondOuterDiv>
-                       <Notepad /> 
-                    </SecondOuterDiv>
+        <
+        /LowerSection>
 
-                </SecondDividedSection>
-
-            </LowerSection>
-
-        </GeneralContainer>
+        <
+        /GeneralContainer>
     )
 }
 
