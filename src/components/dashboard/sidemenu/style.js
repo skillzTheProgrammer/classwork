@@ -9,7 +9,6 @@ export const SidemenuContainer = styled.div`
     background-color: #222C67;
     margin: 5px 0 5px 5px;
 `
-
 export const ProfileContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@ export const ProfileContainer = styled.div`
     padding-left: 20px;
 
 `
-
 export const ImageHeader = styled.div`
     display: flex;
     color: white;
@@ -45,7 +43,6 @@ export const ImageHeader = styled.div`
         opacity: .7;
     }
 `
-
 export const ProfileDescription = styled.div`
     display: flex;
     color: white;
@@ -65,7 +62,6 @@ export const ProfileDescription = styled.div`
         text-align: center;
     }
 `
-
 export const MenuDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -76,13 +72,11 @@ export const MenuDiv = styled.div`
 
 export const MenuContent = styled.div`
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
 
     div{
         display: flex;
         padding: 10px 0 10px 40px;
-        /* align-self: center; */
     }
 
     h3{
@@ -91,9 +85,8 @@ export const MenuContent = styled.div`
     }
 
     img{
-        /* background-color:white; */
+        
         margin-right: 10px;
-        /* align-self: center; */
     }
 
     .active{
